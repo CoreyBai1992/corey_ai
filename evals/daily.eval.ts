@@ -1,4 +1,4 @@
-import { defineEval } from "@cursor/bdk/evals";
+import { defineEval, includes } from "@cursor/bdk/evals";
 
 export default defineEval({
   tags: ["smoke"],
@@ -11,6 +11,7 @@ export default defineEval({
         t.succeeded();
         t.calledTool("list_preferences");
         t.notCalledTool("lookup_reference");
+        t.check(t.reply, includes(/山姆|天猫|京东|拼多多/));
       },
     },
     {
