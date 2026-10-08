@@ -1,0 +1,18 @@
+{
+  "name": "corey-ai",
+  "private": true,
+  "type": "module",
+  "description": "Corey，日常对话助手：知识问答、好物推荐、资料查询",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "dev": "bdk dev"
+  },
+  "dependencies": {
+    "@cursor/bdk": "^0.2.21",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}
